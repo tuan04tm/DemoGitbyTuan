@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+// Demo by Tuan k67 - IT2
+
 // Email của Đại học Bách Khoa có dạng như sau:
 // Họ tên: Tu Minh Tuan
 // MSSV: 20225422
