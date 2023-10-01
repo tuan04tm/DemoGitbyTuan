@@ -6,7 +6,7 @@
 // Demo by Tuan k67 - IT2
 
 // Email của Đại học Bách Khoa có dạng như sau:
-// Họ tên: Tu Minh Tuan
+// Họ tên: Từ Minh Tuân
 // MSSV: 20225422
 // Email sẽ là: tuantm225422@sis.hust.edu.vn
 
@@ -15,7 +15,7 @@
 void main(void) {
     printf("Nhap ho va ten (viet khong dau): ");
     char s[100];
-    fgets(s, sizeof(s), stdin); // fgets đọc cả ký tự xuống dòng nên cẩn thận lỗi ở đây
+    fgets(s, 100, stdin); // fgets đọc cả ký tự xuống dòng nên cẩn thận lỗi ở đây
     // Loại bỏ ký tự newline khi dùng fgets()
     int del = strlen(s) - 1;
     s[del] = '\0';
@@ -25,7 +25,7 @@ void main(void) {
     for (int i = 0; i < strlen(s); i++) {
         s[i] = tolower(s[i]);
     }
-    char a[10][10];
+    char a[20][20]; // ở đây tạo bất kỳ, thấy hợp lí là okayy
     int n = 0;
     char *token = strtok(s, " ");
     while ( token != NULL) {
