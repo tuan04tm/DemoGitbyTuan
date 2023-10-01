@@ -8,9 +8,9 @@
 // Email của Đại học Bách Khoa có dạng như sau:
 // Họ tên: Từ Minh Tuân
 // MSSV: 20225422
-// Email sẽ là: tuantm225422@sis.hust.edu.vn
+// Email sẽ là: tuan.tm225422@sis.hust.edu.vn
 
-// Gồm: Tên + Lần lượt các ký tự đầu tiên của họ và tên đệm + 6 chữ số cuối MSSV + @hust.edu.vn
+// Gồm: Tên + . + Lần lượt các ký tự đầu tiên của họ và tên đệm + 6 chữ số cuối MSSV + @hust.edu.vn
 
 void main(void) {
     printf("Nhap ho va ten (viet khong dau): ");
@@ -41,6 +41,8 @@ void main(void) {
     printf("Email Hust cua ban la:\n");
     // In ra tên 
     printf("%s", a[n - 1]);
+    // In ra dấu .
+    printf(".");
     // In ra lần lượt từng chữ cái đầu của họ và tên đệm
     for (int i = 0; i < n - 1; i++) {
         printf("%c", a[i][0]);
